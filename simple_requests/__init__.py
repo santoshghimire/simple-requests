@@ -67,9 +67,9 @@ __copyright__ = 'Copyright 2013 Corey Theiss'
 # This needs to be first
 import gevent.monkey; gevent.monkey.patch_all(thread=False, select=False)
 
-from compat import HTTPError
-from simple_requests import Requests, ResponsePreprocessor
-from strategy import Strict, Lenient, Backoff
-from monkey import patch
+from .compat import HTTPError
+from .simple_requests import Requests, ResponsePreprocessor
+from .strategy import Strict, Lenient, Backoff
+from .monkey import patch
 
 __all__ = ( 'Requests', 'ResponsePreprocessor', 'Strict', 'Lenient', 'Backoff', 'HTTPError', 'patch' )
