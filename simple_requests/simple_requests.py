@@ -71,8 +71,8 @@ from gevent.pool import Pool
 from requests import PreparedRequest, Request, Response, Session
 from requests.adapters import HTTPAdapter
 
-from compat import HTTPError
-from strategy import RetryStrategy, Strict
+from .compat import HTTPError
+from .strategy import RetryStrategy, Strict
 
 
 class ResponsePreprocessor(object):
